@@ -1,0 +1,384 @@
+/*general styles
+*******************************************************/
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*header
+*******************************************************/
+header {
+    margin: auto;
+    width: 100%;
+    background-image: url("images/blog_header_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 130% 105%;
+    background-position: 50% 90%;
+}
+
+header div {
+    display: none;
+}
+
+div i {
+    color: white;
+    padding: 1em;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+header li {
+    margin: 0 auto;
+    padding-bottom: 1.2em;
+}
+
+header a {
+    color: #7E92A3;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.title {
+    height: 250px;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
+
+
+/*main
+*******************************************************/
+main {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content {
+    width: 65%;
+}
+
+main aside {
+    width: 25%;
+}
+
+.visual-guide img:first-of-type {
+    max-height: 800px;
+    width: 100%;
+}
+
+.visual-guide img:last-of-type {
+    max-height: 800px;
+    width: 100%;
+}
+
+h4 {
+    color: #37424A;
+    font-size: 1em;
+}
+
+h2 {
+    color: #37424A;
+    font-weight: 200px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+main article p {
+    font-family: "lato", sans-serif;
+    font-size: 1em;
+}
+
+
+/*about us
+*******************************************************/
+.about {
+    margin-top: 3em;
+}
+
+.about h3 { 
+    color: #37424A;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.about p {
+    color: #7D858A;
+    font-family: "lato", sans-serif;
+    font-size: 1em;
+}
+
+.about img {
+    width: 100%;
+}
+
+/*recent issues
+*******************************************************/
+.recent h3 {
+    color: #37424A;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.recent a {
+    color: #819CB4;
+}
+
+.recent ul {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/*leave a comment form
+*******************************************************/
+.comment-wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.comment h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3em;
+}
+
+.comment form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3.2em;
+}
+
+.comment input {
+    padding: .4em 10px;
+    margin: .4em .2em;
+    border: 1.5px solid #7D858A;
+    width: 47.2%;
+}
+
+.comment textarea {
+    width: 100%;
+    display: block;
+    outline: 0;
+    margin: .4em .2em;
+    border: 2px solid #7D858A;
+}
+
+.comment ::placeholder {
+    text-transform: uppercase;
+}
+
+.comment button {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #7D858A;
+    background-color: transparent;
+    letter-spacing: .09em;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+/*footer
+*******************************************************/
+footer {
+    background-color:#CBF0F3;
+    width: 100%;
+    overflow: auto;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer ul li {
+    color: #7D858A;
+    padding: .8em 1.2em;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.4em;
+}
+
+
+footer input[name="email"] {
+    padding-left: 5px;
+    width: 17%;
+    border: none;
+    margin-right: .8em;
+}
+
+
+footer input[name="email"]::placeholder {
+    text-align: center;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer input[type="submit"] {
+    font-size: .6em;
+    margin-left: .8em;
+    padding: .6em .8em;
+    background-color: transparent;
+    border: 1.5px solid #7D858A;
+    border-radius: 2px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    color: #5C6D75;
+    font-size: .9em;
+}
+
+/*hover effects
+*******************************************************/
+header a:hover {
+    color: #000;
+    border-bottom: 1.5px solid #000;
+}
+
+.recent a:hover {
+    border-bottom: 1.5px solid #819CB4; 
+}
+
+.comment button:hover {
+    background: #7D858A;
+    color: white;
+}
+
+footer input[type="submit"]:hover {
+    color: white;
+    background-color: #7D858A;
+    cursor: pointer;
+}
+
+.fb:hover {
+    border: 5px solid  #3b5998;
+    border-radius: 1em;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.fb i:hover {
+    color: #3b5998;
+}
+
+.tw:hover {
+    border: 5px solid  #ffc838;
+    border-radius: 1em;
+    box-shadow: 0 0 15px #ffc838;
+    transition: all 0.5s ease;
+}
+
+.tw i:hover {
+    color: #ffc838;
+}
+
+.ig:hover {
+    border: 5px solid  #fb3958;
+    border-radius: 1em;
+    box-shadow: 0 0 15px #fb3958;
+    transition: all 0.5s ease;
+}
+
+.ig i:hover {
+    color: #fb3958;
+}
+
+/*media queries
+*******************************************************/
+
+@media only screen and (max-width: 1000px) {
+    .comment input {
+        margin: 0 auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
+    #main-content,
+    main aside {
+        width: 100%;
+    }
+    
+    .comment form {
+        flex-direction: column;
+    }
+    
+    .comment input {
+        height: 2.5em;
+        width: 60%;
+        margin: .5em auto;
+    }
+    
+   .comment textarea,
+   .comment button {
+        width: 60%;
+       margin: .5em auto;
+    }
+    
+    .comment button {
+        height: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+    
+    header div {
+        display: block;
+    }
+    
+    footer form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer input[name="email"] {
+        height: 2.5em;
+        width: 50%;
+        margin: 1em auto;
+    }
+    
+    footer input[name="email-submit"] {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
